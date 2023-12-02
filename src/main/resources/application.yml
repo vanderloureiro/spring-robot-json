@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: spring-robot-json
+
+springdoc:
+  api-docs:
+    path: /api-docs
