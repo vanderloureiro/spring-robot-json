@@ -6,6 +6,12 @@ public class Position{
         Integer verticalAxis;
         DirectionEnum direction;
 
+        public Position(Integer horizontalAxis, Integer verticalAxis, DirectionEnum direction) {
+                this.horizontalAxis = horizontalAxis;
+                this.verticalAxis = verticalAxis;
+                this.direction = direction;
+        }
+
         public Integer getHorizontalAxis() {
                 return horizontalAxis;
         }

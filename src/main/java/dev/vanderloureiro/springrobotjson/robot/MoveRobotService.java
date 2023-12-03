@@ -11,11 +11,9 @@ public class MoveRobotService {
 
     @Autowired
     private PositionRepository positionRepository;
-    @Autowired
-    private GetCurrentPositionService getCurrentPositionService;
 
     public Position execute(Moviment input) {
-        Position currentPosition = this.getCurrentPositionService.execute();
+        Position currentPosition = this.positionRepository.get();
         switch (input.moviment()) {
             case L -> this.turnLeft(currentPosition);
             case R -> this.turnRight(currentPosition);
